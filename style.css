@@ -143,6 +143,68 @@ button:hover {
   color: #ff900e;
 }
 
+/* love and enjoy section   */
+
+.love-enjoy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.year {
+  position: absolute;
+  left: 900px;
+  bottom: -25px;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  background-color: #ff900e;
+}
+
+.yr {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.exp {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.love-enjoy-content h3 {
+  color: #131313;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+
+.love-enjoy-content p {
+  width: 586px;
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.love-enjoy-content h5 {
+  color: #131313;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.card {
+  color: #ffffff;
+  padding: 35px 42px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px;
+  background-color: rgba(0, 0, 0, 0.06);
+  margin-bottom: 15px;
+}
+
 /* Responsive section  */
 
 @media screen and (max-width: 576px) {
@@ -183,13 +245,13 @@ button:hover {
 
   .features-container {
     flex-direction: column;
+    margin-bottom: 10px;
   }
 
   .features-img {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
-
   }
 
   .features-img img {
@@ -207,5 +269,25 @@ button:hover {
 
   .features-details button {
     padding: 15px 15px;
+  }
+
+  .love-enjoy-container {
+    padding: 30px;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .love-enjoy-container img {
+    display: none;
+  }
+
+  .year {
+    display: none;
+  }
+
+  .love-enjoy-content p {
+    width: 100%;
   }
 }
