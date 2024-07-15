@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arvo", serif;
+}
+
+/* nav bar section  */
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+.nav-container p {
+  color: #ff900e;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.nav-container ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-container li {
+  list-style: none;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #131313;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* banner section  */
+
+.banner-container {
+  background-color: #ff900e1a;
+}
+
+.banner-content {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.banner-content h3 {
+  /* width: 862px; */
+  color: #131313;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.banner-content p {
+  /* width: 868px; */
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 32px;
+}
+
+.banner-content button {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff900e;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #131313;
+}
+
+.img-content {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+/* Responsive section  */
+
+@media screen and (max-width: 576px) {
+
+  .nav-container {
+    padding-bottom: 40px;
+  }
+
+  .nav-container p {
+    font-size: 1rem;
+    color: #ff900e;
+  }
+
+  .nav-container ul {
+    gap: 15px;
+  }
+
+  .banner-content h3 {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  .banner-content p {
+    padding: 0 15px;
+    padding-bottom: 15px;
+  }
+
+  .banner-content button {
+    padding: 15px 15px;
+  }
+
+  .img-content img {
+    width: 90%;
+  }
+
+}
