@@ -205,6 +205,60 @@ button:hover {
   margin-bottom: 15px;
 }
 
+/* fact section  */
+
+.fact-container {
+  margin: 0 250px 80px;
+}
+
+
+.fact-content h4 {
+  color: #131313;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.fact-content p {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 24px;
+  padding-bottom: 50px;
+}
+
+.prize {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+  border-radius: 8px;
+  border: 2px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  text-align: center;
+  align-content: center;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: #ff8800;
+}
+
+.box h5 {
+  color: #424242;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.box p {
+  color: #727272;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 /* Responsive section  */
 
 @media screen and (max-width: 576px) {
@@ -273,6 +327,7 @@ button:hover {
 
   .love-enjoy-container {
     padding: 30px;
+    margin: 0;
   }
 
   .card {
@@ -290,4 +345,20 @@ button:hover {
   .love-enjoy-content p {
     width: 100%;
   }
+
+  .fact-container {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .box {
+    width: 85%;
+    
+  }
+
+  .prize {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+  }
+
 }
